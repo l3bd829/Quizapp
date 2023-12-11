@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Mathematics Quiz </title>
+    <link rel='stylesheet' href="./Style.css">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+</head>
+<body>
+    <div class="container" id="start-container">
+        <h1> Mathematics Quiz </h1>
+        <p>Choose the right answer for the following questions: </p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        </br>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="container" id="quiz-container">
+        <h2 id="question"></h2>
+        <div id="choices" class="choices-container"></div>
+    </div>
+
+    <div class="container" id="result-container">
+        <h2>Quiz Completed!</h2>
+        <p id="user-name"></p>
+        <p id="user-score"></p>
+        <button onclick="showHistory()">Go to Dashboard</button>
+    </div>
+    
+    <div class="container" id="history-container">
+        <h2>Players Dashboard</h2>
+        <ol id="history-list"></ol>
+        <button class="againbtn" onclick="startNewQuiz()">Play Again</button>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+</html>
